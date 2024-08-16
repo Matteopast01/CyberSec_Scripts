@@ -1,0 +1,18 @@
+from pwn import *
+r = remote("software-17.challs.olicyber.it", 13000)
+print(r.recvuntil(b"secondi"))
+print(r.recvline())
+print(r.recvline())
+r.sendline(b'')
+print(r.recvline())
+for i in range (10):
+	list_to_sum = r.recvline()
+	print(list_to_sum)
+	list_to_sum = list_to_sum.decode('utf-8').rstrip('\n')
+	list_to_sum = eval(list_to_sum)
+	result = sum(list_to_sum)
+	result = str(result).encode()
+	print(result)
+	r.sendline(result)
+	print(r.recvline())
+	print(r.recvline())

